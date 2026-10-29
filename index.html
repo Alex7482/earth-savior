@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earth Savior</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="game-container">
+    <header class="game-header">
+      <h1>EARTH SAVIOR</h1>
+      <p>DEFEND EARTH. SURVIVE THE VOID.</p>
+    </header>
+
+    <section id="hud">
+      <div>SCORE <span id="score">0</span></div>
+      <div>LIVES <span id="lives">3</span></div>
+      <div>WEAPON <span id="weapon">BLASTER</span></div>
+    </section>
+
+    <div id="game-screen">
+      <canvas id="gameCanvas" aria-label="Earth Savior game area"></canvas>
+
+      <div id="overlay">
+        <h2 id="overlay-title">EARTH IS IN DANGER</h2>
+        <p id="overlay-message">
+          Pilot your ship. Destroy asteroids. Save Earth.
+        </p>
+        <button id="start-button">START MISSION</button>
+      </div>
+    </div>
+
+    <p id="controls">
+      TURN: ← → &nbsp; THRUST: ↑ &nbsp; FIRE: SPACE &nbsp; PAUSE: P
+    </p>
+    <p id="status" aria-live="polite">Mission ready.</p>
+  </main>
+
+  <script src="game.js"></script>
+</body>
+</html>
